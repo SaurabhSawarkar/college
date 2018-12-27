@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/layout_warnings"
+                  android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:padding="15dp"
+                  android:orientation="vertical"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_warnings">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <TextView
+                        android:id="@+id/tv_first_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/first_name_text"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"/>
+
+                <EditText
+                        android:id="@+id/et_first_name"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_first_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:cursorVisible="true"
+                        android:singleLine="true"
+                        android:hint="@string/first_name_hint"
+                        android:textColor="@android:color/black"/>
+
+                <TextView
+                        android:id="@+id/tv_last_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/et_first_name"
+                        android:text="@string/last_name_text"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"/>
+
+                <EditText
+                        android:id="@+id/et_last_name"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_last_name"
+                        android:layout_below="@id/tv_last_name"
+                        android:cursorVisible="true"
+                        android:layout_marginTop="25dp"
+                        android:singleLine="true"
+                        android:hint="@string/last_name_hint"
+                        android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/email_id_text"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"/>
+
+                <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_email"
+                        android:layout_marginLeft="10dp"
+                        android:cursorVisible="true"
+                        android:layout_marginTop="25dp"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@android:color/black"/>
+
+                <TextView
+                        android:id="@+id/tv_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/et_email"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/phone_number_text"/>
+
+                <EditText
+                        android:id="@+id/et_phone_number"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_email"
+                        android:layout_alignLeft="@id/tv_phone_number"
+                        android:cursorVisible="true"
+                        android:singleLine="true"
+                        android:maxLength="10"
+                        android:layout_marginTop="25dp"
+                        android:inputType="phone"
+                        android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <TextView
+                        android:id="@+id/tv_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/password_text"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"/>
+
+                <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_password"
+                        android:layout_marginLeft="10dp"
+                        android:cursorVisible="true"
+                        android:layout_marginTop="25dp"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:hint="@string/passward_hint"
+                        android:textColor="@android:color/black"/>
+
+                <TextView
+                        android:id="@+id/tv_confirm_passowrd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/et_password"
+                        android:text="@string/confirm_password_text"/>
+
+                <EditText
+                        android:id="@+id/et_confirm_password"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_confirm_passowrd"
+                        android:layout_below="@id/tv_confirm_passowrd"
+                        android:cursorVisible="true"
+                        android:singleLine="true"
+                        android:hint="@string/confirm_password_hint"
+                        android:layout_marginTop="25dp"
+                        android:inputType="textPassword"
+                        android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                <TextView
+                        android:id="@+id/tv_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/dob_text"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"/>
+
+                <Button
+                        android:id="@+id/dp_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"
+                        android:text="@string/enter_dob_text"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <TextView
+                        android:id="@+id/tv_education"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/education_text"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"/>
+
+                <EditText
+                        android:id="@+id/et_education"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_education"
+                        android:cursorVisible="true"
+                        android:hint="@string/education_hint"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"/>
+
+                <TextView
+                        android:id="@+id/tv_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/et_education"
+                        android:text="@string/city_text"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"/>
+
+                <EditText
+                        android:id="@+id/et_city"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_city"
+                        android:layout_alignLeft="@id/tv_city"
+                        android:cursorVisible="true"
+                        android:singleLine="true"
+                        android:hint="@string/city_hint"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <TextView
+                        android:id="@+id/tv_district"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/district_text"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"/>
+
+                <EditText
+                        android:id="@+id/et_district"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_district"
+                        android:cursorVisible="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:hint="@string/district_hint"
+                        android:textColor="@android:color/black"/>
+
+                <TextView
+                        android:id="@+id/tv_taluka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/et_district"
+                        android:text="@string/taluka_text"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"/>
+
+                <EditText
+                        android:id="@+id/et_taluka"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_taluka"
+                        android:cursorVisible="true"
+                        android:layout_marginTop="25dp"
+                        android:singleLine="true"
+                        android:hint="@string/taluka_hint"
+                        android:layout_alignLeft="@id/tv_taluka"
+                        android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/state_text"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"/>
+
+                <EditText
+                        android:id="@+id/et_state"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_state"
+                        android:cursorVisible="true"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:hint="@string/state_hint"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@android:color/black"/>
+
+                <TextView
+                        android:id="@+id/tv_pincode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/et_state"
+                        android:text="@string/pincde_text"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"/>
+
+                <EditText
+                        android:id="@+id/et_pincode"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_pincode"
+                        android:layout_alignLeft="@id/tv_pincode"
+                        android:cursorVisible="true"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/address_text"
+                        android:layout_marginTop="25dp"
+                        android:drawableRight="@drawable/mandetory_icon"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"/>
+
+                <EditText
+                        android:id="@+id/et_address"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_address"
+                        android:cursorVisible="true"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:hint="@string/address_hint"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@android:color/black"/>
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/register_text"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+            android:id="@+id/layout_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/semi_transparent_color">
+
+        <ProgressBar
+                android:id="@+id/pb_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_centerInParent="true"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pb_loading"
+                android:layout_marginTop="70dp"
+                android:text="@string/registration_info"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

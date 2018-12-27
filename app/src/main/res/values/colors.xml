@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--background colors-->
+    <color name="dark_gray_background">#353843</color>
+    <color name="light_gray_background">#292D3A</color>
+    <color name="line_background_color">#A2A3AF</color>
+    <color name="card_header_background">#464A56</color>
+    <color name="light_background">#424651</color>
+
+    <!--Common colors-->
+    <color name="transparent">@android:color/transparent</color>
+    <color name="semi_transparent">#7F727272</color>
+    <color name="white">@android:color/white</color>
+    <color name="blue">#3CA2F5</color>
+    <color name="black">@android:color/black</color>
+    <color name="toolbar_background">#3498DB</color>
+    <color name="tab_color">#4698CE</color>
+    <color name="dull_green">#39CA74</color>
+    <color name="bright_green">#28F72D</color>
+    <color name="red">#FF0000</color>
+    <color name="dark_pink">#ef4db6</color>
+    <color name="light_pink">#ef4db7</color>
+
+    <color name="light_blue_background">#1E90FF</color>
+    <color name="light_blue">#33ABF9</color>
+    <color name="light_green">#79A2C9</color>
+    <color name="buton_background_pressed">#17C4BB</color>
+    <color name="button_background_color">#3469AF</color>
+    <color name="dark_voilet_backround">#2D3E58</color>
+    <color name="grayed_out">#B6BFCB</color>
+    <color name="semi_transparent_color">#80444444</color>
+</resources>

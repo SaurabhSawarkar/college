@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Project</string>
+
+    <string name="refresh_token_expiry_msg">Login required. Please login again.</string>
+    <string name="ok_text">Ok</string>
+    <string name="error_text">Error</string>
+    <string name="on_create_called_formatter">%1$s -- onCreate called</string>
+    <string name="on_fragment_visible_formatter">%1$s -- Visible to user</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="confirm_text">Confirm</string>
+    <string name="register_text">Register</string>
+
+    <!--Navigation drawer toggle-->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!--logout dialog-->
+    <string name="logout_text">Logout</string>
+    <string name="logout_message_text">Are you sure you want to logout?</string>
+    <string name="exit_message_text">Are you sure you want to exit?</string>
+
+
+    <!-- Registration Screen Strings -->
+    <string name="first_name_text">First Name</string>
+    <string name="last_name_text">Last Name</string>
+    <string name="email_id_text">Email ID</string>
+    <string name="phone_number_text">Phone Number</string>
+    <string name="confirm_password_text">Confirm Password</string>
+    <string name="dob_text">DOB</string>
+    <string name="enter_dob_text">Enter Date of Birth</string>
+    <string name="education_text">Education</string>
+    <string name="city_text">City</string>
+    <string name="district_text">District</string>
+    <string name="taluka_text">Taluka</string>
+    <string name="state_text">State</string>
+    <string name="pincde_text">Pincode</string>
+    <string name="address_text">Address</string>
+    <string name="registration_info">Please wait.. Account is registering!!!</string>
+    <string name="password_text">Password</string>
+
+    <string name="first_name_hint">Enter First Name</string>
+    <string name="last_name_hint">Enter Last Name</string>
+    <string name="email_id_hint">Enter email ID</string>
+    <string name="phone_number_hint">Enter Phone Number</string>
+    <string name="confirm_password_hint">Enter Confirm Password</string>
+    <string name="education_hint">Enter Education</string>
+    <string name="city_hint">Enter City</string>
+    <string name="district_hint">Enter District</string>
+    <string name="taluka_hint">Enter Taluka</string>
+    <string name="state_hint">Enter State</string>
+    <string name="pincde_hint">Enter Pincode</string>
+    <string name="address_hint">Enter Address</string>
+    <string name="update_module">Update Modules</string>
+    <string name="passward_hint">Password</string>
+</resources>
